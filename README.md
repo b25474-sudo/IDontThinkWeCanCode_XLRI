@@ -11,8 +11,8 @@
 | **Condition** | Type 2 Diabetes |
 | **Live dashboard** | **https://idontthinkwecancodexlri.streamlit.app** — try it, no installation needed |
 | **Demo video (2–5 min)** | _[Unlisted YouTube link]_ |
-| **Architecture diagram** | `architecture.pdf` _(to be added)_ |
-| **Presentation** | `presentation.pdf` _(to be added)_ |
+| **Architecture diagram** | [`GlucoTwin_Architecture.pdf`](GlucoTwin_Architecture.pdf) |
+| **Presentation** | [`GlucoTwin_Presentation.pdf`](GlucoTwin_Presentation.pdf) (PowerPoint version: [`GlucoTwin_Presentation.pptx`](GlucoTwin_Presentation.pptx)) |
 | **License** | MIT (see [`LICENSE`](LICENSE)) |
 
 ---
@@ -137,7 +137,8 @@ Streamlit (dashboard) · Plotly (charts) · Google Colab (notebooks).
 | `test_patients.csv` | The 30 patients held out for testing |
 | `model_comparison.csv` | EHR-only vs wearables-only vs fused results |
 | `requirements.txt` | Python packages |
-| `architecture.pdf`, `presentation.pdf` | Architecture diagram and presentation _(to be added)_ |
+| `GlucoTwin_Architecture.pdf` | Architecture diagram |
+| `GlucoTwin_Presentation.pdf`, `.pptx` | Presentation with project details and outcomes |
 
 ## 8. Run it yourself
 
