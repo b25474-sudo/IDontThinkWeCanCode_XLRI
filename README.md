@@ -10,7 +10,6 @@
 | **Team member** | Yashas Tarakaram · PGD-BM 2025–27 |
 | **Condition** | Type 2 Diabetes |
 | **Live dashboard** | **https://idontthinkwecancodexlri.streamlit.app** — try it, no installation needed |
-| **Demo video (2–5 min)** | _[Unlisted YouTube link]_ |
 | **Architecture diagram** | [`GlucoTwin_Architecture.pdf`](GlucoTwin_Architecture.pdf) |
 | **Presentation** | [`GlucoTwin_Presentation.pdf`](GlucoTwin_Presentation.pdf) (PowerPoint version: [`GlucoTwin_Presentation.pptx`](GlucoTwin_Presentation.pptx)) |
 | **License** | MIT (see [`LICENSE`](LICENSE)) |
