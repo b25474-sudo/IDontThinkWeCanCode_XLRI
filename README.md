@@ -6,12 +6,13 @@
 |---|---|
 | **Team** | I Dont Think We Can Code |
 | **College** | XLRI – Xavier School of Management, Jamshedpur |
-| **Team leader** | _[Your full name]_ · _[programme, e.g. PGDM (BM) 2025–27]_ |
+| **Team leader** | Sarah Dhamija · PGD-BM 2025–27 |
+| **Team member** | Yashas Tarakaram · PGD-BM 2025–27 |
 | **Condition** | Type 2 Diabetes |
-| **Live dashboard** | _[Streamlit link — added after deployment]_ |
+| **Live dashboard** | **https://idontthinkwecancodexlri.streamlit.app** — try it, no installation needed |
 | **Demo video (2–5 min)** | _[Unlisted YouTube link]_ |
-| **Architecture diagram** | [`docs/architecture.pdf`](docs/architecture.pdf) _(to be added)_ |
-| **Presentation** | [`docs/presentation.pdf`](docs/presentation.pdf) _(to be added)_ |
+| **Architecture diagram** | `architecture.pdf` _(to be added)_ |
+| **Presentation** | `presentation.pdf` _(to be added)_ |
 | **License** | MIT (see [`LICENSE`](LICENSE)) |
 
 ---
@@ -36,7 +37,7 @@ and, in future, the patient through a phone app.
 ## 2. Data (synthetic only — DPDP Act / HIPAA compliant)
 
 No real patient data is used. We generated 100 synthetic patients with physiology-based rules calibrated to
-published clinical relationships (see `notebooks/01_create_virtual_patients.ipynb`):
+published clinical relationships (see `01_create_virtual_patients.ipynb`):
 
 | Stream | Contents | Resolution |
 |---|---|---|
@@ -97,7 +98,7 @@ spike that has already started is useless) and only from past data (no leakage).
 At the 60% alert level: **97% of spikes flagged in advance**, median warning **≈95 minutes** before glucose
 crosses 180, **0.7 false alarms per patient per day**.
 
-Physiology simulator (`python scripts/evaluate_physiology.py`): mean absolute error **11.9 mg/dL at 1 h** and
+Physiology simulator (`python evaluate_physiology.py`): mean absolute error **11.9 mg/dL at 1 h** and
 **14.0 mg/dL at 2 h**, versus 23.1 and 36.7 mg/dL for assuming glucose stays unchanged.
 
 **Limitations.** The patients are synthetic and follow steadier routines than real people, so the model can
@@ -122,18 +123,21 @@ Streamlit (dashboard) · Plotly (charts) · Google Colab (notebooks).
 
 ## 7. Repository structure
 
-```
-├── app.py                         # Streamlit doctor dashboard
-├── twin_core.py                   # features, model helpers, physiology twin
-├── requirements.txt
-├── data/                          # synthetic EHR, wearable time series, daily summaries
-├── model/                         # trained LightGBM model, test-patient list, model comparison
-├── notebooks/
-│   ├── 01_create_virtual_patients.ipynb
-│   └── 02_train_the_twin.ipynb
-├── scripts/evaluate_physiology.py # reproduces simulator accuracy
-└── docs/                          # architecture diagram and presentation (PDF)
-```
+| File | What it is |
+|---|---|
+| `app.py` | Streamlit doctor dashboard |
+| `twin_core.py` | Feature engineering, model helpers and the physiology twin |
+| `01_create_virtual_patients.ipynb` | Generates the 100 synthetic patients and validates them against clinical benchmarks |
+| `02_train_the_twin.ipynb` | Builds features and labels, trains and evaluates the early-warning model |
+| `evaluate_physiology.py` | Reproduces the physiology simulator's accuracy |
+| `ehr_patients.csv` | Synthetic EHR, one row per patient |
+| `wearable_timeseries.csv` | Synthetic wearable stream, every 5 minutes for 14 days |
+| `daily_summary.csv` | Daily sleep, HRV and step summaries |
+| `twin_model.txt` | Trained LightGBM model |
+| `test_patients.csv` | The 30 patients held out for testing |
+| `model_comparison.csv` | EHR-only vs wearables-only vs fused results |
+| `requirements.txt` | Python packages |
+| `architecture.pdf`, `presentation.pdf` | Architecture diagram and presentation _(to be added)_ |
 
 ## 8. Run it yourself
 
@@ -142,7 +146,8 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-To regenerate everything from scratch, run the two notebooks in order (Google Colab works with no setup).
+Or simply open the live dashboard linked above. To regenerate everything from scratch, run the two notebooks
+in order (Google Colab works with no setup).
 All randomness is seeded, so results reproduce exactly.
 
 ## 9. License
