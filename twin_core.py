@@ -92,8 +92,29 @@ def load_raw():
     return ehr, wear, daily
 
 
+def train_model(ehr, wear, daily):
+    """Re-train the early-warning model exactly as in notebooks/02_train_the_twin.ipynb
+    (same 60 training patients, same settings, same random seed)."""
+    pids = np.array(sorted(ehr.patient_id))
+    np.random.default_rng(7).shuffle(pids)
+    train_ids = pids[:60]
+    f = build_features(ehr, wear, daily, train_ids)
+    rows = f[(f.timestamp.dt.minute % 15 == 0) & f.cgm.notna() & (f.cgm < SPIKE)
+             & f.future_max_2h.notna() & f.cgm_lag_60m.notna()]
+    clf = lgb.LGBMClassifier(n_estimators=400, learning_rate=0.05, num_leaves=31, min_child_samples=50,
+                             subsample=0.8, subsample_freq=1, colsample_bytree=0.8, verbose=-1,
+                             random_state=42)
+    clf.fit(rows[ALL_FEATURES], (rows.future_max_2h > SPIKE).astype(int))
+    return clf.booster_
+
+
 def load_model():
-    return lgb.Booster(model_file=str(ROOT / "model" / "twin_model.txt"))
+    """Load the saved model; if the file is missing or unreadable, rebuild it from the data."""
+    path = ROOT / "model" / "twin_model.txt"
+    try:
+        return lgb.Booster(model_file=str(path))
+    except Exception:
+        return train_model(*load_raw())
 
 
 def _future_max(s, n):
