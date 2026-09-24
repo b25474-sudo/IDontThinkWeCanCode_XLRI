@@ -96,7 +96,7 @@ with st.sidebar:
     threshold = st.slider("Alert when spike risk reaches", 30, 90, 60, 5, format="%d%%") / 100
     st.caption("Chosen on validation patients: catches most spikes with under 1 false alarm per patient per day.")
     st.divider()
-    st.caption("Team *I Dont Think We Can Code* · XLRI Jamshedpur\n\nSynthetic data only. Not a medical device.")
+    st.caption("Team *I Dont Think We Can Code* · XLRI\n\nSynthetic data only. Not a medical device.")
 
 snap = feats[feats.timestamp == now].set_index("patient_id")
 
@@ -396,5 +396,5 @@ DPDP Act and HIPAA.
 **Not a medical device.** This is a research proof-of-concept built for the Happiest Health Reimagining and
 Reforming Healthcare in India Summit 2026.
 
-*Team I Dont Think We Can Code · XLRI Jamshedpur*
+*Team I Dont Think We Can Code · XLRI*
 """)

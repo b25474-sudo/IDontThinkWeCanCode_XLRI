@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | **Team** | I Dont Think We Can Code |
-| **College** | XLRI – Xavier School of Management, Jamshedpur |
+| **College** | XLRI – Xavier School of Management |
 | **Team leader** | Sarah Dhamija · PGD-BM 2025–27 |
 | **Team member** | Yashas Tarakaram · PGD-BM 2025–27 |
 | **Condition** | Type 2 Diabetes |
