@@ -1,0 +1,5 @@
+model,AUROC,AUPRC
+Simple rule (no AI),0.573,0.336
+EHR only,0.632,0.381
+Wearables only,0.928,0.836
+Digital Twin (EHR + wearables + personal),0.943,0.873

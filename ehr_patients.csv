@@ -1,0 +1,101 @@
+patient_id,age,sex,bmi,years_with_diabetes,hba1c_pct,tcf7l2_risk_alleles,family_history_diabetes,medication,systolic_bp,diastolic_bp,ldl_mg_dl,hdl_mg_dl,triglycerides_mg_dl,creatinine_mg_dl,past_diagnoses,activity_level,diet_pattern,fasting_glucose_mg_dl
+P001,38,Female,22.3,8.5,6.9,0,False,Metformin,115,71,89,58,166,0.86,Type 2 Diabetes,Low,Rice-dominant,133
+P002,38,Female,22.7,9.2,8.1,1,True,Metformin + DPP-4 inhibitor,114,69,131,53,151,0.92,Type 2 Diabetes; Dyslipidemia,High,Rice-dominant,180
+P003,71,Female,29.0,10.8,8.0,0,True,Metformin,146,91,95,50,171,1.03,Type 2 Diabetes; Hypertension; Obesity,Low,Rice-dominant,159
+P004,50,Female,27.7,7.9,6.7,1,True,Metformin,125,86,89,57,96,0.84,Type 2 Diabetes; Obesity,Moderate,Wheat-dominant,107
+P005,35,Female,25.1,3.4,5.9,0,False,Lifestyle only,124,77,136,46,153,0.88,Type 2 Diabetes; Dyslipidemia,Moderate,Rice-dominant,101
+P006,47,Male,25.0,1.7,6.8,0,False,Metformin,129,83,112,40,141,0.76,Type 2 Diabetes; Hypertension,Low,Mixed,131
+P007,35,Male,22.9,3.7,5.9,1,False,Lifestyle only,108,65,140,31,153,1.02,Type 2 Diabetes; Dyslipidemia,High,Mixed,102
+P008,72,Male,27.4,5.1,7.1,1,True,Metformin,140,93,140,46,244,0.97,Type 2 Diabetes; Dyslipidemia,High,Wheat-dominant,140
+P009,64,Male,29.0,4.2,7.5,0,False,Metformin,155,111,127,35,87,1.15,Type 2 Diabetes; Hypertension; Obesity,Low,Wheat-dominant,155
+P010,49,Female,25.9,10.4,5.9,0,False,Metformin,125,88,119,57,129,0.73,Type 2 Diabetes; Hypertension,Low,Mixed,99
+P011,52,Male,22.9,9.5,6.6,1,True,Metformin,129,76,78,34,142,1.35,Type 2 Diabetes,High,Wheat-dominant,137
+P012,68,Male,27.4,3.6,6.9,0,False,Metformin,123,68,165,57,149,1.06,Type 2 Diabetes; Dyslipidemia,High,Rice-dominant,128
+P013,47,Male,29.1,3.6,7.9,0,True,Metformin,128,82,53,42,128,0.85,Type 2 Diabetes; Obesity,Moderate,Wheat-dominant,149
+P014,47,Male,26.6,3.3,7.7,0,False,Metformin,124,72,108,45,161,0.87,Type 2 Diabetes,Low,Mixed,156
+P015,65,Male,23.1,4.0,7.6,1,True,Metformin,123,72,51,43,98,1.03,Type 2 Diabetes,Low,Wheat-dominant,161
+P016,59,Female,20.6,18.6,10.1,1,False,Metformin + Basal insulin,122,77,167,43,114,1.15,Type 2 Diabetes; Dyslipidemia; Peripheral neuropathy,Low,Rice-dominant,215
+P017,70,Female,25.4,6.0,7.1,1,False,Metformin,138,84,115,44,162,0.93,Type 2 Diabetes,Moderate,Wheat-dominant,141
+P018,35,Male,22.1,11.2,8.1,2,True,Metformin + DPP-4 inhibitor,121,68,101,47,132,1.02,Type 2 Diabetes,Moderate,Mixed,177
+P019,69,Male,25.6,5.7,7.0,0,False,Metformin,152,82,141,41,145,0.99,Type 2 Diabetes; Hypertension; Dyslipidemia,Low,Mixed,138
+P020,62,Female,33.4,11.1,8.6,1,False,Metformin + SGLT2 inhibitor,138,80,145,38,237,0.94,Type 2 Diabetes; Dyslipidemia; Obesity; Peripheral neuropathy,Moderate,Rice-dominant,171
+P021,56,Female,26.2,1.7,6.1,1,False,Metformin,130,72,95,52,214,0.94,Type 2 Diabetes; Dyslipidemia,Moderate,Mixed,123
+P022,73,Female,33.0,7.7,8.1,0,False,Metformin + SGLT2 inhibitor,137,88,147,49,198,1.02,Type 2 Diabetes; Dyslipidemia; Obesity,Low,Rice-dominant,161
+P023,74,Male,30.5,1.9,6.2,1,False,Metformin,149,90,155,49,222,1.21,Type 2 Diabetes; Hypertension; Dyslipidemia; Obesity,High,Wheat-dominant,123
+P024,40,Male,32.9,3.4,6.0,0,False,Metformin,119,76,131,44,121,0.66,Type 2 Diabetes; Dyslipidemia; Obesity,Low,Mixed,114
+P025,36,Male,27.1,8.6,7.0,0,True,Metformin,123,80,103,47,143,1.02,Type 2 Diabetes; Hypertension,Moderate,Mixed,138
+P026,74,Male,18.5,2.8,7.3,2,False,Metformin,144,87,156,46,88,1.04,Type 2 Diabetes; Hypertension; Dyslipidemia,Moderate,Rice-dominant,145
+P027,35,Male,29.7,15.1,8.3,0,False,Metformin + DPP-4 inhibitor,104,71,97,38,122,1.0,Type 2 Diabetes; Obesity,Moderate,Rice-dominant,171
+P028,71,Male,25.1,1.2,6.8,1,False,Metformin,134,84,174,60,149,1.13,Type 2 Diabetes; Dyslipidemia,Low,Wheat-dominant,133
+P029,73,Male,27.8,2.4,6.4,1,True,Metformin,157,101,86,46,141,1.08,Type 2 Diabetes; Hypertension; Obesity,Moderate,Rice-dominant,105
+P030,61,Male,30.8,1.8,7.9,0,False,Metformin,136,86,113,41,138,1.14,Type 2 Diabetes; Obesity,Moderate,Rice-dominant,141
+P031,67,Male,30.8,6.6,7.9,0,True,Metformin,120,72,55,30,262,1.28,Type 2 Diabetes; Dyslipidemia; Obesity,Low,Rice-dominant,149
+P032,37,Female,36.2,6.9,7.4,1,False,Metformin,130,79,139,49,246,0.72,Type 2 Diabetes; Dyslipidemia; Obesity,High,Wheat-dominant,150
+P033,74,Male,31.8,4.3,7.1,0,True,Metformin,144,97,104,34,157,1.22,Type 2 Diabetes; Hypertension; Obesity,Low,Rice-dominant,123
+P034,69,Male,31.1,0.5,6.8,0,False,Metformin,137,82,110,43,130,1.2,Type 2 Diabetes; Obesity,Moderate,Wheat-dominant,130
+P035,55,Female,34.6,4.7,6.4,1,False,Metformin,130,74,113,49,196,0.76,Type 2 Diabetes; Obesity,Low,Rice-dominant,95
+P036,66,Female,28.7,5.8,6.3,0,True,Metformin,121,83,152,47,182,0.57,Type 2 Diabetes; Dyslipidemia; Obesity,Moderate,Mixed,117
+P037,73,Male,34.5,1.7,6.1,1,False,Lifestyle only,162,87,77,37,165,1.24,Type 2 Diabetes; Hypertension; Obesity,Moderate,Mixed,101
+P038,39,Male,24.2,11.7,8.0,1,False,Metformin + DPP-4 inhibitor,124,66,131,36,151,0.87,Type 2 Diabetes; Dyslipidemia,Moderate,Mixed,150
+P039,50,Male,24.0,13.0,6.9,0,False,Metformin,129,76,103,55,103,0.78,Type 2 Diabetes,Low,Wheat-dominant,135
+P040,53,Male,25.4,4.3,5.9,0,True,Metformin,148,90,105,42,177,0.81,Type 2 Diabetes; Hypertension,Low,Mixed,99
+P041,43,Male,25.8,14.6,6.9,0,True,Metformin,125,84,105,30,148,0.99,Type 2 Diabetes,Low,Rice-dominant,118
+P042,71,Female,24.4,6.1,7.0,0,True,Metformin,158,98,127,49,181,1.05,Type 2 Diabetes; Hypertension,High,Wheat-dominant,148
+P043,45,Female,24.5,3.5,6.3,1,True,Metformin,126,76,144,32,111,0.71,Type 2 Diabetes; Dyslipidemia,Low,Wheat-dominant,115
+P044,45,Female,31.0,4.1,6.2,0,True,Lifestyle only,134,80,134,48,216,0.68,Type 2 Diabetes; Hypertension; Dyslipidemia; Obesity,Moderate,Wheat-dominant,113
+P045,36,Male,29.2,3.8,5.9,0,True,Metformin,113,79,123,49,118,0.82,Type 2 Diabetes; Obesity,Low,Rice-dominant,101
+P046,48,Male,27.6,5.6,5.9,0,True,Lifestyle only,139,78,59,44,209,1.33,Type 2 Diabetes; Dyslipidemia; Obesity,Moderate,Mixed,100
+P047,46,Male,25.3,2.0,6.0,2,True,Lifestyle only,130,82,152,49,183,1.11,Type 2 Diabetes; Hypertension; Dyslipidemia,Low,Rice-dominant,78
+P048,63,Male,21.4,14.8,8.4,0,False,Metformin + DPP-4 inhibitor,131,73,127,45,86,1.2,Type 2 Diabetes; Hypertension,Moderate,Rice-dominant,173
+P049,40,Female,26.7,4.3,5.9,0,True,Lifestyle only,126,67,111,57,211,0.97,Type 2 Diabetes; Dyslipidemia,Moderate,Wheat-dominant,95
+P050,71,Female,28.0,11.8,7.4,1,False,Metformin,140,84,98,51,138,0.92,Type 2 Diabetes; Obesity,Moderate,Rice-dominant,146
+P051,51,Male,24.6,12.9,6.0,2,True,Metformin,126,77,111,54,64,1.2,Type 2 Diabetes; Peripheral neuropathy,High,Mixed,99
+P052,74,Female,25.2,12.8,7.4,0,False,Metformin,154,92,119,53,379,1.16,Type 2 Diabetes; Hypertension; Dyslipidemia,Moderate,Mixed,128
+P053,67,Female,30.1,5.1,7.3,0,True,Metformin,118,77,86,37,168,0.94,Type 2 Diabetes; Obesity,Low,Rice-dominant,147
+P054,54,Male,24.2,4.8,6.7,0,False,Metformin,108,60,115,42,137,1.07,Type 2 Diabetes,High,Mixed,117
+P055,56,Male,22.1,6.2,5.9,1,True,Metformin,120,72,116,42,179,0.99,Type 2 Diabetes,Low,Rice-dominant,104
+P056,74,Female,26.9,4.5,6.9,2,True,Metformin,125,77,83,43,174,1.03,Type 2 Diabetes,Moderate,Mixed,138
+P057,51,Female,22.6,7.3,6.1,0,True,Metformin,118,72,171,49,151,0.85,Type 2 Diabetes; Dyslipidemia,Low,Mixed,126
+P058,70,Male,33.1,6.3,8.0,0,True,Metformin + DPP-4 inhibitor,150,92,142,45,266,1.2,Type 2 Diabetes; Hypertension; Dyslipidemia; Obesity,Moderate,Rice-dominant,155
+P059,69,Female,28.0,7.0,8.1,0,True,Metformin + DPP-4 inhibitor,159,95,127,62,167,0.81,Type 2 Diabetes; Hypertension; Obesity,Moderate,Rice-dominant,157
+P060,67,Female,25.5,2.6,6.4,0,True,Lifestyle only,140,79,84,58,130,0.69,Type 2 Diabetes,High,Rice-dominant,122
+P061,75,Female,29.4,6.6,6.9,0,False,Metformin,136,88,159,63,248,0.96,Type 2 Diabetes; Dyslipidemia; Obesity,Moderate,Wheat-dominant,142
+P062,42,Female,29.8,4.8,7.0,0,True,Metformin,129,83,104,54,189,0.64,Type 2 Diabetes; Obesity,Moderate,Mixed,143
+P063,72,Female,22.4,5.2,6.8,0,True,Metformin,137,86,133,34,118,0.62,Type 2 Diabetes; Dyslipidemia,Moderate,Rice-dominant,143
+P064,45,Female,27.3,3.3,7.5,0,False,Metformin,120,79,135,41,210,0.93,Type 2 Diabetes; Dyslipidemia,Low,Rice-dominant,151
+P065,75,Male,28.7,2.1,6.9,1,False,Metformin,164,90,159,44,185,1.15,Type 2 Diabetes; Hypertension; Dyslipidemia; Obesity,Moderate,Wheat-dominant,124
+P066,72,Male,24.7,10.8,7.6,0,True,Metformin,150,90,109,35,134,0.97,Type 2 Diabetes; Hypertension; Peripheral neuropathy,Low,Wheat-dominant,162
+P067,43,Male,24.2,12.9,7.4,0,False,Metformin,123,73,73,32,171,1.07,Type 2 Diabetes,Moderate,Wheat-dominant,139
+P068,60,Male,31.4,13.9,9.1,2,True,Metformin + SGLT2 inhibitor,141,89,131,33,218,0.99,Type 2 Diabetes; Hypertension; Dyslipidemia; Obesity,Low,Rice-dominant,188
+P069,44,Female,25.4,1.7,7.3,0,False,Metformin,120,76,85,53,147,0.69,Type 2 Diabetes,Low,Wheat-dominant,148
+P070,65,Female,26.1,4.1,6.3,1,True,Lifestyle only,132,88,117,50,147,0.91,Type 2 Diabetes,Low,Rice-dominant,101
+P071,60,Male,26.6,8.2,7.9,0,True,Metformin,133,87,123,39,188,1.15,Type 2 Diabetes,High,Mixed,157
+P072,53,Male,21.8,3.7,5.9,1,False,Metformin,142,84,104,35,73,1.04,Type 2 Diabetes; Hypertension,Low,Mixed,114
+P073,39,Female,23.5,5.6,7.5,1,True,Metformin,111,73,115,39,125,0.88,Type 2 Diabetes,High,Wheat-dominant,147
+P074,69,Male,25.5,8.5,6.4,1,True,Lifestyle only,124,68,100,47,143,1.07,Type 2 Diabetes,Low,Rice-dominant,104
+P075,56,Male,27.7,9.3,5.9,1,False,Lifestyle only,112,60,79,53,156,1.32,Type 2 Diabetes; Obesity,High,Rice-dominant,102
+P076,43,Male,29.4,3.1,6.0,1,True,Metformin,127,80,91,43,198,1.11,Type 2 Diabetes; Obesity,High,Wheat-dominant,109
+P077,58,Male,24.4,10.2,7.3,2,False,Metformin,113,76,161,38,155,1.04,Type 2 Diabetes; Dyslipidemia,Low,Rice-dominant,146
+P078,47,Male,30.5,5.4,7.1,1,False,Metformin,120,78,135,47,274,1.27,Type 2 Diabetes; Dyslipidemia; Obesity,High,Wheat-dominant,133
+P079,75,Male,24.1,14.3,5.9,0,False,Metformin,144,88,123,33,140,1.55,Type 2 Diabetes; Hypertension,Low,Rice-dominant,88
+P080,52,Female,18.5,6.1,5.9,2,False,Metformin,122,62,133,58,104,0.51,Type 2 Diabetes; Dyslipidemia,Low,Rice-dominant,109
+P081,40,Male,21.8,8.8,8.3,0,True,Metformin + DPP-4 inhibitor,122,66,151,39,109,1.05,Type 2 Diabetes; Dyslipidemia,Low,Wheat-dominant,179
+P082,35,Female,20.1,4.5,7.1,0,True,Metformin,118,75,171,55,147,1.2,Type 2 Diabetes; Dyslipidemia,Low,Wheat-dominant,142
+P083,56,Male,24.4,2.0,7.1,0,False,Metformin,127,76,132,34,158,1.34,Type 2 Diabetes; Dyslipidemia,Moderate,Mixed,154
+P084,36,Female,25.5,3.7,6.6,2,True,Metformin,123,69,155,60,197,0.56,Type 2 Diabetes; Dyslipidemia,Moderate,Mixed,126
+P085,58,Female,28.0,7.5,8.2,1,False,Metformin + DPP-4 inhibitor,103,63,110,35,164,1.1,Type 2 Diabetes; Hypertension; Obesity,Moderate,Wheat-dominant,154
+P086,42,Female,32.4,3.2,7.5,0,False,Metformin,126,81,73,57,165,0.78,Type 2 Diabetes; Hypertension; Obesity,Low,Wheat-dominant,152
+P087,49,Female,29.1,5.0,5.9,1,False,Metformin,142,81,182,56,222,0.86,Type 2 Diabetes; Hypertension; Dyslipidemia; Obesity,Moderate,Wheat-dominant,105
+P088,52,Male,32.1,5.7,7.7,0,True,Metformin,140,83,87,35,111,1.11,Type 2 Diabetes; Obesity,Low,Mixed,139
+P089,39,Male,31.0,2.8,6.9,1,True,Metformin,128,93,160,39,146,0.95,Type 2 Diabetes; Dyslipidemia; Obesity,Moderate,Mixed,136
+P090,72,Male,26.0,20.2,8.9,0,False,Metformin + SGLT2 inhibitor,128,81,145,44,102,1.1,Type 2 Diabetes; Dyslipidemia,Low,Rice-dominant,176
+P091,74,Male,18.5,4.3,5.9,0,False,Lifestyle only,136,86,118,48,142,1.03,Type 2 Diabetes,Moderate,Rice-dominant,108
+P092,60,Male,24.0,4.9,5.9,1,True,Metformin,118,77,80,39,116,1.3,Type 2 Diabetes,Moderate,Rice-dominant,110
+P093,46,Female,26.3,17.4,8.6,0,True,Metformin + DPP-4 inhibitor,105,60,121,44,225,0.92,Type 2 Diabetes; Dyslipidemia,Moderate,Mixed,161
+P094,69,Female,24.8,10.5,7.7,0,False,Metformin,139,87,144,40,263,0.85,Type 2 Diabetes; Dyslipidemia,High,Mixed,146
+P095,39,Female,29.9,6.0,5.9,1,False,Metformin,130,82,68,42,142,0.77,Type 2 Diabetes; Obesity,Moderate,Rice-dominant,98
+P096,65,Male,29.7,4.5,6.0,0,False,Lifestyle only,130,72,120,48,105,1.12,Type 2 Diabetes; Obesity,Moderate,Rice-dominant,103
+P097,65,Female,21.5,5.1,7.7,2,True,Metformin,128,82,94,50,78,0.57,Type 2 Diabetes,Low,Wheat-dominant,162
+P098,52,Male,20.9,4.4,6.9,2,True,Metformin,126,87,83,45,175,1.25,Type 2 Diabetes,Low,Wheat-dominant,138
+P099,44,Male,27.3,4.2,6.7,0,True,Metformin,125,73,131,66,92,1.08,Type 2 Diabetes; Hypertension; Dyslipidemia,Low,Wheat-dominant,127
+P100,52,Female,31.2,5.8,7.6,1,True,Metformin,142,79,90,49,175,0.92,Type 2 Diabetes; Hypertension; Obesity,High,Wheat-dominant,149
