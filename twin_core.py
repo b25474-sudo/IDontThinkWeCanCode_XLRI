@@ -85,10 +85,19 @@ FEATURE_LABELS = {
 }
 
 
+def find_file(name):
+    """Look for a file in data/, model/ or the repository root (in case folders were flattened on upload)."""
+    for folder in (ROOT / "data", ROOT / "model", ROOT):
+        if (folder / name).exists():
+            return folder / name
+    raise FileNotFoundError(
+        f"Could not find '{name}'. Upload it to the repository's data/ or model/ folder (or the main page).")
+
+
 def load_raw():
-    ehr = pd.read_csv(ROOT / "data" / "ehr_patients.csv")
-    wear = pd.read_csv(ROOT / "data" / "wearable_timeseries.csv", parse_dates=["timestamp"])
-    daily = pd.read_csv(ROOT / "data" / "daily_summary.csv", parse_dates=["date"])
+    ehr = pd.read_csv(find_file("ehr_patients.csv"))
+    wear = pd.read_csv(find_file("wearable_timeseries.csv"), parse_dates=["timestamp"])
+    daily = pd.read_csv(find_file("daily_summary.csv"), parse_dates=["date"])
     return ehr, wear, daily
 
 
@@ -110,9 +119,8 @@ def train_model(ehr, wear, daily):
 
 def load_model():
     """Load the saved model; if the file is missing or unreadable, rebuild it from the data."""
-    path = ROOT / "model" / "twin_model.txt"
     try:
-        return lgb.Booster(model_file=str(path))
+        return lgb.Booster(model_file=str(find_file("twin_model.txt")))
     except Exception:
         return train_model(*load_raw())
 

@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import streamlit as st
 from plotly.subplots import make_subplots
 
-from twin_core import (ALL_FEATURES, FEATURE_LABELS, ROOT, SPIKE, build_features, explain, fit_physiology,
+from twin_core import (ALL_FEATURES, FEATURE_LABELS, ROOT, SPIKE, build_features, explain, find_file, fit_physiology,
                        forecast, load_model, load_raw, predict)
 
 st.set_page_config(page_title="GlucoTwin", page_icon="🩺", layout="wide")
@@ -40,7 +40,7 @@ def get_model():
 @st.cache_data(show_spinner="Building the virtual patients…")
 def get_data():
     ehr, wear, daily = load_raw()
-    test_ids = pd.read_csv(ROOT / "model" / "test_patients.csv").patient_id.tolist()
+    test_ids = pd.read_csv(find_file("test_patients.csv")).patient_id.tolist()
     feats = build_features(ehr, wear, daily, test_ids)
     ok = feats.cgm.notna() & (feats.cgm < SPIKE) & feats.cgm_lag_60m.notna()
     feats["risk"] = np.nan
@@ -322,7 +322,7 @@ with tab_twin:
 # ---------------------------------------------------------------- performance
 with tab_perf:
     st.subheader("Does fusing EHR and wearable data help?")
-    comp = pd.read_csv(ROOT / "model" / "model_comparison.csv")
+    comp = pd.read_csv(find_file("model_comparison.csv"))
     fig = go.Figure(go.Bar(x=comp.AUROC, y=comp.model, orientation="h",
                            marker_color=["#B7C4C1", "#8FB0AB", "#4E8E87", TEAL],
                            text=comp.AUROC.map("{:.3f}".format), textposition="outside"))
