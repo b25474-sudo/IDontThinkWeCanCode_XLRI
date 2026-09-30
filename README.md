@@ -12,7 +12,7 @@
 | **Live dashboard** | **https://idontthinkwecancodexlri.streamlit.app** — try it, no installation needed |
 | **Architecture diagram** | [`GlucoTwin_Architecture.pdf`](GlucoTwin_Architecture.pdf) |
 | **Presentation** | [`GlucoTwin_Presentation.pdf`](GlucoTwin_Presentation.pdf) (PowerPoint version: [`GlucoTwin_Presentation.pptx`](GlucoTwin_Presentation.pptx)) |
-| **Explainer Video** | [https://youtu.be/eKXvFYsJKMA](url) |
+| **Explainer Video** | [https://youtu.be/eKXvFYsJKMA] |
 | **License** | MIT (see [`LICENSE`](LICENSE)) |
 
 ---
